@@ -1,7 +1,6 @@
 // http://www.omdbapi.com/?i=tt3896198&apikey=c2a89583
 
-// import addMovieToList from './list.js'
-// import likedMovies from './list.js'
+
 import { btnState, render } from './render.js'
 // import {addedMovies} from './data.js'
 
