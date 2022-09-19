@@ -1,0 +1,161 @@
+.block-container
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent
+{
+    display: flex;
+    flex-direction: column;
+    width: 462px;
+    margin-bottom: 20px;
+    /* align-items: center; */
+
+}
+.seperator
+{
+    margin-top: 15px;
+
+    margin-left: 30px;
+    width: 75%;
+    border-top: 1px solid #D1D5DB;
+}
+
+.movie-container
+{
+    display: flex;
+    /* height: 140px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster-img
+{
+    height: 147.4px;
+    width: 99px;    
+    border-radius: 2.3px;
+
+}
+
+.movie-details
+{
+    width: 342px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container
+{
+    display: flex;    
+}
+
+.movie-title
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: justified;
+}
+
+
+
+.movie-meta
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.genre
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.add-to-watchlist
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+}
+
+.watchlist-btn
+{
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.watchlist-text
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.rating-container
+{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    justify-content: space-between;
+}
+
+.rating-img
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 0.75px;
+    /* padding-left: 7px; */
+}
+
+.rating-number
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+    /* margin-left: 7px; */
+
+}
+
+.title-container
+{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plot
+{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
