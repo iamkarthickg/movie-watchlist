@@ -2,7 +2,7 @@
 
 // import addMovieToList from './list.js'
 // import likedMovies from './list.js'
-import { render, renderlikedMovies } from './render.js'
+import { btnState, render } from './render.js'
 // import {addedMovies} from './data.js'
 
 
@@ -26,7 +26,8 @@ async function getMovie()
         {
             movieTitleResults.push(data.Search[i].Title)
         }
-        render(movieTitleResults)
+        await render(movieTitleResults)
+        btnState()
     }
     else
     {
