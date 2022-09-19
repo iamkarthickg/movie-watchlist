@@ -15,7 +15,7 @@ async function getMovie()
 {
     movieTitleResults = []
     let movieName = searchInputEl.value
-    let response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=c2a89583&s=${movieName}`)
+    let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=c2a89583&s=${movieName}`)
     let data = await response.json()
     // console.log(data)
     searchInputEl.value = ""  
