@@ -119,10 +119,46 @@ async function render(movies)
 </div>
     `
 
+        
     }
     blockContainerEl.innerHTML = movieHtml
     movieList.innerHTML = ""
     movieList.style.display = "block"
     movieList.appendChild(blockContainerEl)
+
 }
-export {render, renderlikedMovies}
+
+function btnState()
+{
+
+    console.log("btnState function is ON")
+    let match = false
+    let moviesfromLocalStorage = JSON.parse(localStorage.getItem("watchlist-movies"))
+    let allWatchlistBtns = document.querySelectorAll(`.watchlist-btn`)
+    let allWatchlistTxt = document.querySelectorAll(`.watchlist-text`)
+    let allPosters = document.querySelectorAll(`.poster-img`)
+    // console.log(allWatchlistBtns)
+    if(moviesfromLocalStorage)
+    {          
+        console.log(moviesfromLocalStorage)  
+       for(let i=0;i<moviesfromLocalStorage.length;i++)
+       {
+        let temp = moviesfromLocalStorage[i].poster
+        for(let j=0;j<allPosters.length;j++)
+        {
+            console.log(allWatchlistBtns[j].src)
+            if(temp === allPosters[j].src)
+            {
+                console.log("LOCAL STORAGE POSTER", temp)
+                // console.log(allWatchlistBtns[j])
+                allWatchlistBtns[j].src = "images/remove.png"
+                allWatchlistTxt[j].textContent = "Remove"
+                allWatchlistBtns[j].classList.remove("add-state")
+                allWatchlistBtns[j].classList.add("remove-state")
+                
+            }
+        }
+       }
+    }
+}
+export {render, btnState}
