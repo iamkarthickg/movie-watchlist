@@ -39,7 +39,7 @@ async function render(movies)
     for(let i=0;i<movies.length;i++)
     {
         // console.log(movies)
-        let response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=c2a89583&t=${movies[i]}`)
+        let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=c2a89583&t=${movies[i]}`)
         let data = await response.json()
         // console.log(`${data.Plot}`)
         let titleParam = data.Title.replace(" ", "_")
